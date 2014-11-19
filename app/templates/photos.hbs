@@ -1,0 +1,16 @@
+    <h2>Photos</h2>
+
+    <div class="row">
+      <ul id="photos" class="thumbnails">
+
+        {{#each model}}
+          <li class="span4">
+            <span class="thumbnail">
+              <img {{bindAttr src="src"}} />
+            </span>
+          </li>
+        {{/each}}
+
+    
+      </ul>
+    </div>

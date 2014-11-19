@@ -1,3 +1,14 @@
-<h2 id='title'>Welcome to Ember.js</h2>
+<div class="container">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="#">Ember Digest</a>
+      <ul class="nav pull-right">
+        <li>{{#linkTo 'articles'}}Articles{{/linkTo}}</li>
+        <li>{{#linkTo 'photos'}}Photos{{/linkTo}}</li>
+        <li>{{#linkTo 'login'}}Login{{/linkTo}}</li>
+      </ul>
+    </div>
+  </div>
 
-{{outlet}}
+  {{outlet}}
+</div>
