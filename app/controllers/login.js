@@ -10,6 +10,10 @@ export default Ember.Controller.extend({
     });
   },
 
+  queryParams: ['name'],
+
+  name: '',
+
   token: localStorage.token,
   tokenChanged: function() {
     localStorage.token = this.get('token');
