@@ -28,7 +28,7 @@ app.post('/auth.json', function(req, res) {
       token: currentToken
     });
   } else {
-    res.status(401).send({
+    res.status(200).send({
       success: false,
       message: 'Invalid username/password'
     });
