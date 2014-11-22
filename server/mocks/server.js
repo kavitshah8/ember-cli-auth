@@ -23,12 +23,12 @@ app.post('/auth.json', function(req, res) {
   if (username == 'ember' && password == 'casts') {
     // Generate and save the token (forgotten upon server restart).
     currentToken = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    res.send({
+    res.status(200).send({
       success: true,
       token: currentToken
     });
   } else {
-    res.send({
+    res.status(401).send({
       success: false,
       message: 'Invalid username/password'
     });
